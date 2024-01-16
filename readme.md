@@ -30,3 +30,5 @@ NOTA: o comando env $(cat .env) irá realizar a leitura das variáveis do arquiv
 
 - Eager Loading: Deve ser usado quando queremos puxar todos os dados de todas as tabelas que estao relacionadas
 - Lazy Loading: Deve ser usado quando queremos filtrar os dados das tabelas que estao relacionadas.
+
+Resumo referente ao dia ORM - Associations 1:1 e 1:N
