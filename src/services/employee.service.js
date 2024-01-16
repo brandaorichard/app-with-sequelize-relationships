@@ -2,7 +2,9 @@ const { Address, Employee } = require('../models/');
 
 const getAll = async () => {
   const employees = await Employee.findAll({
-    include: { model: Address, as: 'addresses' },
+    include: { model: Address, as: 'addresses', 
+      attributes: { exclude: ['number'] },
+    },
   });
   return employees;
 };

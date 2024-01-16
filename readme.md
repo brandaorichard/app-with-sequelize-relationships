@@ -27,3 +27,6 @@ Criar o arquivo .sequelize para configurar o caminho das pastas:
 -> env $(cat .env) npx sequelize db:create
 
 NOTA: o comando env $(cat .env) irá realizar a leitura das variáveis do arquivo .env e repassá-las para o próximo comando, disponibilizando assim os valores das variáveis de ambiente para o seu código através do process.env.NOME_DA_VARIAVEL.
+
+- Eager Loading: Deve ser usado quando queremos puxar todos os dados de todas as tabelas que estao relacionadas
+- Lazy Loading: Deve ser usado quando queremos filtrar os dados das tabelas que estao relacionadas.
