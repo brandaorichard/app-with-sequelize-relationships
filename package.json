@@ -4,7 +4,8 @@
   "description": "Receita:",
   "main": "index.js",
   "scripts": {
-    "dev": "env $(cat .env) nodemon src/server.js"
+    "dev": "env $(cat .env) nodemon src/server.js",
+    "db:reset": "env $(cat .env) npx sequelize db:drop && env $(cat .env) npx sequelize db:create && npx sequelize db:migrate && npx sequelize db:seed:all"
   },
   "keywords": [],
   "author": "",
